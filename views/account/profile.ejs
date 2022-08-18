@@ -1,0 +1,29 @@
+<% layout ('layout') -%>
+
+
+<div class="container mt-5">
+  <!-- Example row of columns -->
+    <h1>Profil</h1>
+
+    <div class="row mt-5">
+      <aside class="col-sm-6 col-md-4 ">
+              
+              <img src="<%= user.profile.picture %>" alt="">
+              <p>Nom: <%=user.profile.name %></p>
+              <p>Email: <%=user.email %></p>
+              <p>Adresse: <%=user.address %></p>
+
+
+              <a href="/edit-profile" class="btn btn-primary">Editer le profil</a>
+      </aside>
+
+      <section class="col-sm-6 col-md-8">
+        <h3>Historique</h3>
+
+
+      </section>
+      
+      
+        
+    </div>
+</div>
